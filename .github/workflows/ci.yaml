@@ -23,6 +23,6 @@ jobs:
             ${{ steps.cargo-home.outputs.cargohome }}/.crates.toml
             ${{ steps.cargo-home.outputs.cargohome }}/.crates2.json
       - name: Rustfmt Check
-        uses: actions-rust-lang/rustfmt@add-manifest-path
+        uses: actions-rust-lang/rustfmt@v1
         with:
           manifest-path: ./proj/Cargo.toml
