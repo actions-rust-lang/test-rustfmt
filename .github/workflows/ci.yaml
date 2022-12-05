@@ -13,6 +13,12 @@ jobs:
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           components: rustfmt
+      - uses: actions/cache@v3
+        id: cache
+        with:
+          path: |
+            ${{ env.CARGO_HOME || join([env.HOME, ".cargo"], "/") }}/.crates.toml
+            ${{ env.CARGO_HOME || join([env.HOME, ".cargo"], "/") }}/.crates2.json
       - name: Rustfmt Check
         uses: actions-rust-lang/rustfmt@add-manifest-path
         with:
