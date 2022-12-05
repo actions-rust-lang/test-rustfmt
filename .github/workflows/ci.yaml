@@ -17,8 +17,8 @@ jobs:
         id: cache
         with:
           path: |
-            ${{ env.CARGO_HOME || join([env.HOME, ".cargo"], "/") }}/.crates.toml
-            ${{ env.CARGO_HOME || join([env.HOME, ".cargo"], "/") }}/.crates2.json
+            ${{ env.CARGO_HOME || format("{0}/{1}", env.HOME, ".cargo") }}/.crates.toml
+            ${{ env.CARGO_HOME || format("{0}/{1}", env.HOME, ".cargo") }}/.crates2.json
       - name: Rustfmt Check
         uses: actions-rust-lang/rustfmt@add-manifest-path
         with:
