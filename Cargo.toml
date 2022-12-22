@@ -6,3 +6,7 @@ edition = "2021"
 [lib]
 name = "foobar"
 path = "src/lib.rs"
+
+[dependencies]
+capnp = "=0.15.0"
+openssl = "=0.10.44"
