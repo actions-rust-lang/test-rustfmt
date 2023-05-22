@@ -3,10 +3,4 @@ name = "foobar"
 version = "0.1.0"
 edition = "2021"
 
-[lib]
-name = "foobar"
-path = "src/lib.rs"
-
 [dependencies]
-capnp = "=0.15.0"
-openssl = "=0.10.44"
