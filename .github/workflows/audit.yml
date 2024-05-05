@@ -26,4 +26,4 @@ jobs:
         with:
           # Comma separated list of issues to ignore
           ignore: RUSTSEC-2020-0036
-          workingDirectory: ./doesntexist/
+          # workingDirectory: ./doesntexist/
