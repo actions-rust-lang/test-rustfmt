@@ -21,8 +21,9 @@ jobs:
       issues: write
     steps:
       - uses: actions/checkout@v3
-      - uses: actions-rust-lang/audit@main
+      - uses: actions-rust-lang/audit@working-directory
         name: Audit Rust Dependencies
         with:
           # Comma separated list of issues to ignore
           ignore: RUSTSEC-2020-0036
+          workingDirectory: ./proj/
