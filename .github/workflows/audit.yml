@@ -21,7 +21,7 @@ jobs:
       issues: write
     steps:
       - uses: actions/checkout@v4
-      - uses: actions-rust-lang/audit@working-directory
+      - uses: actions-rust-lang/audit@main
         name: Audit Rust Dependencies
         with:
           # Comma separated list of issues to ignore
