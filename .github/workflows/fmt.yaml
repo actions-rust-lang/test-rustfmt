@@ -1,4 +1,4 @@
-name: "Test Suite"
+name: "Test actions-rust-lang/rustfmt"
 on:
   push:
   pull_request:
