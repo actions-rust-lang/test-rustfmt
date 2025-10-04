@@ -8,5 +8,5 @@ name = "foobar"
 path = "proj/src/lib.rs"
 
 [dependencies]
-capnp = "=0.15.0"
+capnp = "=0.15.2"
 openssl = "=0.10.44"
