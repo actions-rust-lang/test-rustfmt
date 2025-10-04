@@ -1,11 +1,11 @@
-name: "Test Suite"
+name: "Test Suite Sub"
 on:
   push:
   pull_request:
 
 jobs:
-  formatting:
-    name: cargo fmt
+  clippy-subdir:
+    name: "cargo clippy in subdir"
     runs-on: ubuntu-latest
     steps:
       - run: rustup self uninstall
