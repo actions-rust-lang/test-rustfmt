@@ -16,4 +16,4 @@ jobs:
           components: clippy
           rust-src-dir: proj
           override: false
-      - run: cargo clippy --all-targets --all-features --locked -- -D
+      - run: cargo clippy --all-targets --all-features --locked
