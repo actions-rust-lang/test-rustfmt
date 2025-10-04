@@ -8,13 +8,12 @@ jobs:
     name: "cargo clippy in subdir"
     runs-on: ubuntu-latest
     steps:
-      - run: rustup self uninstall
+      - run: rustup self uninstall -y
       - uses: actions/checkout@v5
-      - uses: actions-rust-lang/setup-rust-toolchain@v1
+      - uses: actions-rust-lang/setup-rust-toolchain@main
         with:
           toolchain: stable
           components: clippy
           rust-src-dir: proj
           override: false
-      - uses: Swatinem/rust-cache@v2
       - run: cargo clippy --all-targets --all-features --locked -- -D

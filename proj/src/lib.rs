@@ -1,5 +1,2 @@
+use std::collection::{BTreeMap, HashMap};
 use std::fmt::{self};
-use std::collection::{
-HashMap,
-    BTreeMap}
-;
