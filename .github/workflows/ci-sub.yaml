@@ -9,6 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: rustup default none && rustup self uninstall -y
+      - run: |
+        rustc --version || true
+        cargo --version || true
+        rustup --version || true
       - uses: actions/checkout@v5
       - uses: actions-rust-lang/setup-rust-toolchain@main
         with:
