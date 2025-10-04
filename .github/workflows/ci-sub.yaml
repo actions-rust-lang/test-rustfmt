@@ -8,6 +8,7 @@ jobs:
     name: "cargo clippy in subdir"
     runs-on: ubuntu-latest
     steps:
+      - run: rustup default none
       # - run: rustup default none && rustup self uninstall -y
       - run: |
           rustc --version || true
