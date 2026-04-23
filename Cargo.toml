@@ -9,4 +9,4 @@ path = "proj/src/lib.rs"
 
 [dependencies]
 capnp = "=0.15.2"
-openssl = "=0.10.44"
+openssl = "=0.10.78"
